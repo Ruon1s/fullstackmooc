@@ -1,0 +1,6 @@
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over selain:
+Selain lähettää palvelimelle form datansa ja samalla kutsuu omaa funktiotaan joka lisää lähetetyn datan jo selaimessa olevaan
+data arrayhyn ja lisää sen myös sivun html:ään. Kaikki tapahtuu selaimessa
+end note
