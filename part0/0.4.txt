@@ -1,10 +1,10 @@
-selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 palvelin-->selain: Uudelleenohjauspyyntö
-selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/notes
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
 palvelin-->selain: HTML-koodi
-selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
 palvelin-->selain: main.css
-selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
 palvelin-->selain: main.js
 
 note over selain:
@@ -12,6 +12,9 @@ Selain lähettää form datan palvelimelle joka lisää lähetetyn datan arrayhy
 joka päivittää sivun, käynnistäen uudelleen javascript koodin joka lataa päivitetyn data.jsonin.
 end note
 
-selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
-palvelin-->selain: [{"content":"HTML is easy","date":"2019-05-23T17:30:31.098Z"}, ...]
+
+selain->palvelin HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+palvelin-->selain: favicon.ico
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin-->selain: [{content: "ergk", date: "2021-05-09T07:11:25.910Z"},…]
 
