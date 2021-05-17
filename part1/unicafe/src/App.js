@@ -81,7 +81,10 @@ const App = () => {
         <Button handleClick={handleNeutralClick} text={'Neutral'}/>
         <Button handleClick={handleBadClick} text={'Bad'}/>
         {everything.all !== 0 ?
+            <>
+            <h1>statistics</h1>
         <Statistics everything={everything}/>
+        </>
         : <p> No feedback given </p>
         }
     </div>
